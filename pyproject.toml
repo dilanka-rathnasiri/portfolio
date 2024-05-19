@@ -16,3 +16,6 @@ maintainers = [
 description = "sample python cli tool built with typer"
 readme = "README.md"
 license = { file = "LICENSE" }
+
+[project.scripts]
+dilanka-cli= "dilankacli.main:app"
