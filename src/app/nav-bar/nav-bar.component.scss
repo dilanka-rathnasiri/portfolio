@@ -1,0 +1,12 @@
+#mainBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#centerBox {
+    justify-content: center;
+}
+
+#rightBox {
+    justify-content: flex-end;
+}
