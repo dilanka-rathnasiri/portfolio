@@ -5,18 +5,19 @@
         </div>
 
         <div id="centerBox">
-            <a class="box-navbar-text" aria-current="page" href="#">Home</a>
-            <a class="box-navbar-text" aria-current="page" href="#">Experience</a>
-            <a class="box-navbar-text" aria-current="page" href="#">Education</a>
-            <a class="box-navbar-text" aria-current="page" href="#">Skills</a>
-            <a class="box-navbar-text" aria-current="page" href="#">Project</a>
-            <a class="box-navbar-text" aria-current="page" href="#">Certifications</a>
+            <a class="box-navbar-text" routerLink="/" routerLinkActive="active" aria-current="page" [routerLinkActiveOptions]="{exact: true}">Home</a>
+            <a class="box-navbar-text" routerLink="/experience" routerLinkActive="active" aria-current="page">Experience</a>
+            <a class="box-navbar-text" routerLink="/education" routerLinkActive="active" aria-current="page">Education</a>
+            <a class="box-navbar-text" routerLink="/skills" routerLinkActive="active" aria-current="page">Skills</a>
+            <a class="box-navbar-text" routerLink="/projects" routerLinkActive="active" aria-current="page">Projects</a>
+            <a class="box-navbar-text" routerLink="/blogs" routerLinkActive="active" aria-current="page">Blogs</a>
+            <a class="box-navbar-text" routerLink="/certifications" routerLinkActive="active" aria-current="page">Certifications</a>
         </div>
 
         <div id="rightBox">
-            <a class="box-navbar-text" aria-current="page" href="#">Linkedin</a>
-            <a class="box-navbar-text" aria-current="page" href="#">GitHub</a>
-            <a class="box-navbar-text" aria-current="page" href="#">Dev.to</a>
+            <a class="box-navbar-text" aria-current="page" href="https://www.linkedin.com/in/dilankarathnasiri" target="_blank">Linkedin</a>
+            <a class="box-navbar-text" aria-current="page" href="https://github.com/dilanka-rathnasiri" target="_blank">GitHub</a>
+            <a class="box-navbar-text" aria-current="page" href="https://dev.to/dilanka-rathnasiri" target="_blank">Dev.to</a>
         </div>
     </div>
 </nav>
