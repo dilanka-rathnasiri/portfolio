@@ -1,1 +1,8 @@
 @import "bootstrap/scss/bootstrap";
+
+.box-navbar-text {
+    @extend .text-white;
+    @extend .ms-3;
+    @extend .me-3;
+    @extend .text-decoration-none;
+}
