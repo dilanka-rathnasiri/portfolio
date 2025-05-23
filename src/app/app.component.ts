@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {NavBarComponent} from "./nav-bar/nav-bar.component";
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @Component({
-  selector: 'app-root',
+    selector: 'app-root',
     imports: [RouterOutlet, NavBarComponent],
-  templateUrl: './app.component.html'
+    templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'dilanka-rathnasiri-portfolio';
+    title = 'dilanka-rathnasiri-portfolio';
 }
