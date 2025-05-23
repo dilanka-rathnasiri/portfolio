@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-project',
-  imports: [],
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.scss'
+    selector: 'app-project',
+    imports: [],
+    templateUrl: './project.component.html',
+    styleUrl: './project.component.scss',
 })
-export class ProjectComponent {
-
-}
+export class ProjectComponent {}
