@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
     selector: 'app-root',
     imports: [RouterOutlet, NavBarComponent, FooterComponent],
     templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
     title = 'dilanka-rathnasiri-portfolio';

@@ -1,0 +1,9 @@
+#root-main-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#root-content-box {
+  flex-grow: 1;
+}
