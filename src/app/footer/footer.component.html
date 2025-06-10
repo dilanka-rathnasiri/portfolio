@@ -1,10 +1,21 @@
-<div id="mainBox" class="container-fluid bg-primary pt-2 pb-2 fixed-bottom">
-    <div class="container d-flex justify-content-between">
-        <span class="text-white"
-            >&copy; {{ currentYear }} Dilanka Rathnasiri. All rights
-            reserved.</span
-        >
-        <span class="text-white">Developed with Angular and Bootstrap</span>
+<div class="container-fluid bg-primary pt-2 pb-2">
+    <div id="footerMainBox" class="container">
+        <span class="text-white">
+            <i class="fa-regular fa-copyright"></i>
+            {{ currentYear }} Dilanka Rathnasiri. All rights reserved.
+        </span>
+
+        <span class="text-white">
+            Developed with
+            <a href="https://angular.dev" target="_blank">
+                <i class="fa-brands fa-angular text-white"></i>
+            </a>
+            and
+            <a href="https://getbootstrap.com" target="_blank">
+                <i class="fa-brands fa-bootstrap text-white"></i>
+            </a>
+        </span>
+
         <app-social-media />
     </div>
 </div>

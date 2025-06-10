@@ -1,0 +1,9 @@
+#rootMainBox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#rootContentBox {
+    flex-grow: 1;
+}
