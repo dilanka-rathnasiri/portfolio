@@ -5,56 +5,17 @@
         </div>
 
         <div class="justify-content-center">
-            <a
-                class="box-navbar-text"
-                routerLink="/"
-                routerLinkActive="active"
-                aria-current="page"
-                [routerLinkActiveOptions]="{ exact: true }"
-                >Home</a
-            >
-            <a
-                class="box-navbar-text"
-                routerLink="/experience"
-                routerLinkActive="active"
-                aria-current="page"
-                >Experience</a
-            >
-            <a
-                class="box-navbar-text"
-                routerLink="/education"
-                routerLinkActive="active"
-                aria-current="page"
-                >Education</a
-            >
-            <a
-                class="box-navbar-text"
-                routerLink="/skills"
-                routerLinkActive="active"
-                aria-current="page"
-                >Skills</a
-            >
-            <a
-                class="box-navbar-text"
-                routerLink="/projects"
-                routerLinkActive="active"
-                aria-current="page"
-                >Projects</a
-            >
-            <a
-                class="box-navbar-text"
-                routerLink="/blogs"
-                routerLinkActive="active"
-                aria-current="page"
-                >Blogs</a
-            >
-            <a
-                class="box-navbar-text"
-                routerLink="/certifications"
-                routerLinkActive="active"
-                aria-current="page"
-                >Certifications</a
-            >
+            @for (item of menuItems; track item.label) {
+                <a
+                    class="box-navbar-text"
+                    [routerLink]="item.link"
+                    routerLinkActive="active"
+                    aria-current="page"
+                    [routerLinkActiveOptions]="{ exact: item.exact }"
+                >
+                    {{ item.label }}
+                </a>
+            }
         </div>
 
         <app-social-media />
