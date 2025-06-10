@@ -1,0 +1,25 @@
+#homeMainBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#homeAboutMeBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeWhatIDoBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeLatestBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeSkillOverviewBox {
+    display: flex;
+    justify-content: space-between;
+}
