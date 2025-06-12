@@ -6,7 +6,28 @@
 
 #homeAboutMeBox {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 5rem;
+}
+
+#homeAboutMeDescriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#homeAboutMeDescriptionBox p {
+    text-align: center;
+}
+
+#homeAboutMePhotoBox img {
+    width: 100%;
+    max-width: 16rem;
 }
 
 #homeWhatIDoBox {
