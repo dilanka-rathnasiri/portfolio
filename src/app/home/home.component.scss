@@ -44,3 +44,25 @@
     display: flex;
     justify-content: space-between;
 }
+
+#homeWhatIDoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+#homeWhatIDoItemsBox {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#homeWhatIDoItemsBox .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}

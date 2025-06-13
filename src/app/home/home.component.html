@@ -21,34 +21,18 @@
 
     <div id="homeWhatIDoBox" class="container">
         <h1>What I do</h1>
-        <div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Backend Development</div>
-                <div class="card-body">
-                    <p class="card-text">
-                        Building robust and maintainable applications using
-                        Java, Python, and modern frameworks.
-                    </p>
+        <div id="homeWhatIDoItemsBox">
+            @for (item of whatIDoItems; track item.title) {
+                <div class="card shadow">
+                    <div class="card-body">
+                        <i [class]="`${item.icon} fa-3x text-primary`"></i>
+                        <h4>{{ item.title }}</h4>
+                        <p class="card-text">
+                            {{ item.description }}
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Cloud Engineering</div>
-                <div class="card-body">
-                    <p class="card-text">
-                        Designing and implementing scalable cloud solutions
-                        using AWS services and best practices.
-                    </p>
-                </div>
-            </div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">DevOps</div>
-                <div class="card-body">
-                    <p class="card-text">
-                        Implementing CI/CD pipelines and infrastructure as code
-                        using Terraform and GitLab CI/CD.
-                    </p>
-                </div>
-            </div>
+            }
         </div>
     </div>
 
