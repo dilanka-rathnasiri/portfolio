@@ -1,6 +1,6 @@
-<div class="d-flex flex-column mt-2 mb-2 gy-5">
-    <div class="container d-flex justify-content-between">
-        <div class="d-flex flex-column align-self-center">
+<div id="homeMainBox">
+    <div id="homeAboutMeBox" class="container">
+        <div id="homeAboutMeDescriptionBox">
             <h1>Dilanka Rathnasiri</h1>
             <h4 class="text-secondary">Senior Software Engineer</h4>
             <p>
@@ -9,87 +9,58 @@
                 code.
             </p>
         </div>
-        <div class="container">
-            <!--            <img-->
-            <!--                width="40%"-->
-            <!--                id="profilePic"-->
-            <!--                src="dilanka.jpg"-->
-            <!--                class="rounded-circle border border-light shadow-lg border-5"-->
-            <!--                alt="Dilanka Rathnasiri"-->
-            <!--            />-->
+        <div id="homeAboutMePhotoBox">
+            <img
+                id="profilePic"
+                src="dilanka.jpg"
+                class="rounded-circle border border-light shadow-lg border-5 profile-pic-img"
+                alt="Dilanka Rathnasiri"
+            />
         </div>
     </div>
 
-    <div class="container d-flex flex-column">
+    <div id="homeWhatIDoBox" class="container">
         <h1>What I do</h1>
-        <div class="d-flex justify-content-between">
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Backend Development</div>
-                <div class="card-body">
-                    <p class="card-text">
-                        Building robust and maintainable applications using
-                        Java, Python, and modern frameworks.
-                    </p>
+        <div id="homeWhatIDoItemsBox">
+            @for (item of whatIDoItems; track item.title) {
+                <div class="card shadow">
+                    <div class="card-body">
+                        <i [class]="`${item.icon} fa-3x text-primary`"></i>
+                        <h4>{{ item.title }}</h4>
+                        <p class="card-text">{{ item.description }}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Cloud Engineering</div>
-                <div class="card-body">
-                    <p class="card-text">
-                        Designing and implementing scalable cloud solutions
-                        using AWS services and best practices.
-                    </p>
-                </div>
-            </div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">DevOps</div>
-                <div class="card-body">
-                    <p class="card-text">
-                        Implementing CI/CD pipelines and infrastructure as code
-                        using Terraform and GitLab CI/CD.
-                    </p>
-                </div>
-            </div>
+            }
         </div>
     </div>
 
-    <div class="container d-flex flex-column">
-        <h1>Skill overview</h1>
-        <div class="d-flex flex-row justify-content-between">
-            <h5>Java</h5>
-            <h5>Python</h5>
-            <h5>AWS</h5>
-            <h5>Spring Boot</h5>
-            <h5>Rest API</h5>
-            <h5>GitLab CI/CD</h5>
-            <h5>Terraform</h5>
-            <h5>FastAPI</h5>
-            <h5>Kubernetes</h5>
+    <div id="homeSkillsBox" class="container">
+        <h1>Skills</h1>
+        <div id="homeSkillsItemsBox">
+            @for (item of skillsItems; track item.name) {
+                <div class="card text-bg-primary shadow">
+                    <div class="card-body">
+                        <h6>{{ item.name }}</h6>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 
-    <div class="container d-flex flex-column mt-2 mb-2">
+    <div id="homeLatestBox" class="container">
         <h1>Latest</h1>
-        <div class="d-flex justify-content-between">
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Experience</div>
-                <div class="card-body">
-                    <h2>Senior Software Engineer at Fintech API team</h2>
-                    <p class="card-text">From April 2024 to Present</p>
+        <div id="homeLatestItemsBox">
+            @for (item of latestItems; track item.label) {
+                <div id="homeLatestSingleItemBox" class="card shadow">
+                    <div class="card-body">
+                        <h4>{{ item.label }}</h4>
+                        <i [class]="`${item.icon} fa-3x text-primary`"></i>
+                        <h4>{{ item.title }}</h4>
+                        <h5 class="text-secondary">{{ item.organization }}</h5>
+                        <h6>{{ item.time }}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Eduction</div>
-                <div class="card-body">
-                    <h2>
-                        BSc Engineering Hons. Computer Science and Engineering
-                    </h2>
-                    <p class="card-text">
-                        Faculty of Engineering, University of Moratuwa, Sri
-                        Lanka
-                    </p>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>
