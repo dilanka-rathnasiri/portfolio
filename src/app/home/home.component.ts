@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { WhatIDoItems } from '../dto/WhatIDoItems';
+import { WhatIDoItem } from '../dto/WhatIDoItem';
 import { SkillItem } from '../dto/SkillItem';
+import { LatestItem } from '../dto/LatestItem';
 
 @Component({
     selector: 'app-home',
@@ -9,7 +10,7 @@ import { SkillItem } from '../dto/SkillItem';
     styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-    whatIDoItems: WhatIDoItems[] = [
+    whatIDoItems: WhatIDoItem[] = [
         {
             title: 'Backend Development',
             icon: 'fa-solid fa-server',
@@ -43,5 +44,22 @@ export class HomeComponent {
         { name: 'Terraform', icon: 'fa-brands fa-dev' },
         { name: 'FastAPI', icon: 'fa-brands fa-python' },
         { name: 'Kubernetes', icon: 'fa-brands fa-docker' },
+    ];
+
+    latestItems: LatestItem[] = [
+        {
+            label: 'Experience',
+            title: 'Senior Software Engineer',
+            organization: 'GTN Tech',
+            time: 'April 2024 - Present',
+            icon: 'fa-solid fa-briefcase',
+        },
+        {
+            label: 'Education',
+            title: 'BSc Engineering Hons. Computer Science and Engineering',
+            organization: 'University of Moratuwa',
+            time: 'Aug 2017 – Jun 2022',
+            icon: 'fa-solid fa-graduation-cap',
+        },
     ];
 }

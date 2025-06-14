@@ -1,4 +1,4 @@
-export interface WhatIDoItems {
+export interface WhatIDoItem {
     title: string;
     icon: string;
     description: string;

@@ -49,26 +49,18 @@
 
     <div id="homeLatestBox" class="container">
         <h1>Latest</h1>
-        <div class="d-flex justify-content-between">
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Experience</div>
-                <div class="card-body">
-                    <h2>Senior Software Engineer at Fintech API team</h2>
-                    <p class="card-text">From April 2024 to Present</p>
+        <div id="homeLatestItemsBox">
+            @for (item of latestItems; track item.label) {
+                <div id="homeLatestSingleItemBox" class="card shadow">
+                    <div class="card-body">
+                        <h4>{{ item.label }}</h4>
+                        <i [class]="`${item.icon} fa-3x text-primary`"></i>
+                        <h4>{{ item.title }}</h4>
+                        <h5 class="text-secondary">{{ item.organization }}</h5>
+                        <h6>{{ item.time }}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">Eduction</div>
-                <div class="card-body">
-                    <h2>
-                        BSc Engineering Hons. Computer Science and Engineering
-                    </h2>
-                    <p class="card-text">
-                        Faculty of Engineering, University of Moratuwa, Sri
-                        Lanka
-                    </p>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>
