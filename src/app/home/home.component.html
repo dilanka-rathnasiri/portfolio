@@ -27,27 +27,23 @@
                     <div class="card-body">
                         <i [class]="`${item.icon} fa-3x text-primary`"></i>
                         <h4>{{ item.title }}</h4>
-                        <p class="card-text">
-                            {{ item.description }}
-                        </p>
+                        <p class="card-text">{{ item.description }}</p>
                     </div>
                 </div>
             }
         </div>
     </div>
 
-    <div id="homeSkillOverviewBox" class="container">
-        <h1>Skill overview</h1>
-        <div class="d-flex flex-row justify-content-between">
-            <h5>Java</h5>
-            <h5>Python</h5>
-            <h5>AWS</h5>
-            <h5>Spring Boot</h5>
-            <h5>Rest API</h5>
-            <h5>GitLab CI/CD</h5>
-            <h5>Terraform</h5>
-            <h5>FastAPI</h5>
-            <h5>Kubernetes</h5>
+    <div id="homeSkillsBox" class="container">
+        <h1>Skills</h1>
+        <div id="homeSkillsItemsBox">
+            @for (item of skillsItems; track item.name) {
+                <div class="card text-bg-primary shadow">
+                    <div class="card-body">
+                        <h6>{{ item.name }}</h6>
+                    </div>
+                </div>
+            }
         </div>
     </div>
 
