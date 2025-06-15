@@ -1,1 +1,17 @@
-<p>project works!</p>
+<div id="projectsMainBox" class="container">
+    @for (project of projects; track project.title) {
+        <div class="card shadow">
+            <div class="card-body">
+                <h4>{{ project.title }}</h4>
+                <p class="card-text">{{ project.description }}</p>
+                <a
+                    [href]="project.link"
+                    target="_blank"
+                    class="btn btn-primary"
+                >
+                    View on <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    }
+</div>
