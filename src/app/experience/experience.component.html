@@ -1,140 +1,30 @@
-<div class="container d-flex flex-column mt-2 mb-2">
-    <div class="card text-bg-primary mb-3">
-        <div class="card-header">
-            Senior Software Engineer at Fintech API team
-        </div>
-        <div class="card-body">
-            <h6 class="card-title">GTN Tech, Colombo, Sri Lanka</h6>
-            <h6 class="card-title">From April 2024 to Present</h6>
-            <div class="card-text">
-                <ul>
-                    <li>
-                        Improved the availability of the system by cloud
-                        migration and container orchestration
-                    </li>
-                    <li>
-                        Reduced cloud cost by designing system architecture
-                        through container orchestration and AWS native services
-                    </li>
-                    <li>Developed scalable and maintainable microservices</li>
-                    <li>
-                        Designed and implemented solutions for customer requests
-                    </li>
-                    <li>
-                        Reduced deployment time by developing Infrastructure as
-                        Code using Terraform and CI/CD pipeline using GitLab
-                        CI/CD
-                    </li>
-                </ul>
-                <div>
-                    <b>Tech stack:</b>
+<div id="experienceMainBox" class="container">
+    @for (item of experienceItems; track item.title) {
+        <div class="card shadow">
+            <div id="experienceItemBox" class="card-body">
+                <div id="experienceItemLeftBox">
+                    <h4>{{ item.title }}</h4>
+                    <h4>{{ item.organization }}</h4>
+                    <h6 class="text-secondary">{{ item.time }}</h6>
                     <ul>
-                        <li>Java</li>
-                        <li>Spring Boot</li>
-                        <li>AWS</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>Node.js</li>
-                        <li>Postgres</li>
-                        <li>GitLab CI/CD</li>
-                        <li>Terraform</li>
-                        <li>Kubernetes</li>
-                        <li>Redis</li>
-                        <li>FastAPI</li>
-                        <li>Docker</li>
-                        <li>Linux</li>
+                        @for (point of item.description; track point) {
+                            <li>{{ point }}</li>
+                        }
                     </ul>
+                </div>
+                <div id="experienceItemRightBox">
+                    <h5>Skills</h5>
+                    <div id="experienceItemSkillsBox">
+                        @for (skill of item.techStack; track skill) {
+                            <div class="card text-bg-primary shadow">
+                                <div class="card-body">
+                                    <h6>{{ skill }}</h6>
+                                </div>
+                            </div>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="card text-bg-primary mb-3">
-        <div class="card-header">Software Engineer at Alpha team</div>
-        <div class="card-body">
-            <h6 class="card-title">GTN Tech, Colombo, Sri Lanka</h6>
-            <h6 class="card-title">From May 2022 to March 2024</h6>
-            <div class="card-text">
-                <ul>
-                    <li>
-                        Improved the system availability to 99.9% through cloud
-                        migration of the existing system
-                    </li>
-                    <li>
-                        Reduced cloud cost by 60% by restructuring the system
-                        architecture with native AWS cloud services
-                    </li>
-                    <li>
-                        Improved scalability and maintainability of the system
-                        by developing microservices for the existing monolithic
-                        legacy system
-                    </li>
-                    <li>
-                        Reduced the deployment time by 75% by developing
-                        Infrastructure as Code using Terraform and CI/CD
-                        pipeline using GitLab CI/CD
-                    </li>
-                    <li>
-                        Designed and implemented solutions for customer requests
-                    </li>
-                    <li>Improved reliability of the system by fixing bugs</li>
-                    <li>
-                        Improved the quality of the system through unit testing
-                        and end-to-end testing
-                    </li>
-                </ul>
-                <div>
-                    <b>Tech stack:</b>
-                    <ul>
-                        <li>Java</li>
-                        <li>Spring Boot</li>
-                        <li>AWS</li>
-                        <li>Python</li>
-                        <li>Postgres</li>
-                        <li>GitLab CI/CD</li>
-                        <li>Terraform</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card text-bg-primary mb-3">
-        <div class="card-header">Software Engineering Intern at Telia team</div>
-        <div class="card-body">
-            <h6 class="card-title">Persistent Systems, Colombo, Sri Lanka</h6>
-            <h6 class="card-title">From Oct 2020 to Mar 2021</h6>
-            <div class="card-text">
-                <ul>
-                    <li>
-                        Improved scalability and maintainability of the system
-                        by developing microservices for the existing monolithic
-                        legacy system
-                    </li>
-                    <li>
-                        Improved the reliability of the system by fixing bugs
-                    </li>
-                    <li>
-                        Reduced deployment time by application containerization
-                    </li>
-                    <li>
-                        Improved the quality of the system through unit testing
-                        and acceptance testing
-                    </li>
-                </ul>
-                <div>
-                    <b>Tech stack:</b>
-                    <ul>
-                        <li>Java</li>
-                        <li>Spring Boot</li>
-                        <li>Oracle DB</li>
-                        <li>JPA</li>
-                        <li>Apache Camel</li>
-                        <li>Linux</li>
-                        <li>Docker</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    }
 </div>
