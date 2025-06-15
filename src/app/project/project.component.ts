@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProjectItem } from '../dto/ProjectItem';
 
 @Component({
     selector: 'app-project',
@@ -6,4 +7,25 @@ import { Component } from '@angular/core';
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss',
 })
-export class ProjectComponent {}
+export class ProjectComponent {
+    projects: ProjectItem[] = [
+        {
+            title: 'Awesome Portfolio',
+            description:
+                'A personal portfolio website built with Angular and deployed on AWS',
+            link: 'https://github.com/dilanka-rathnasiri/awesome-portfolio',
+        },
+        {
+            title: 'Cloud Infra Toolkit',
+            description:
+                'Terraform modules and scripts for automating AWS infrastructure',
+            link: 'https://github.com/dilanka-rathnasiri/cloud-infra-toolkit',
+        },
+        {
+            title: 'FastAPI Starter',
+            description:
+                'A starter template for FastAPI projects with Docker and CI/CD',
+            link: 'https://github.com/dilanka-rathnasiri/fastapi-starter',
+        },
+    ];
+}

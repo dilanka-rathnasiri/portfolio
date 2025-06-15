@@ -1,0 +1,22 @@
+#blogsMainBox {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        width: 30%;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+        }
+    }
+}

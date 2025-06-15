@@ -1,1 +1,13 @@
-<p>blog works!</p>
+<div id="blogsMainBox" class="container">
+    @for (blog of blogs; track blog.title) {
+        <div class="card shadow">
+            <div class="card-body">
+                <h4>{{ blog.title }}</h4>
+                <p class="card-text">{{ blog.description }}</p>
+                <a [href]="blog.link" target="_blank" class="btn btn-primary">
+                    Read Article on <i class="fa-brands fa-dev"></i>
+                </a>
+            </div>
+        </div>
+    }
+</div>
