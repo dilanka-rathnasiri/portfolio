@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 import { SocialMediaItem } from '../dto/SocialMediaItem';
 
 @Component({
@@ -7,22 +8,16 @@ import { SocialMediaItem } from '../dto/SocialMediaItem';
     templateUrl: './social-media.component.html',
     styleUrl: './social-media.component.scss',
 })
-export class SocialMediaComponent {
-    socialMediaItems: SocialMediaItem[] = [
-        {
-            label: 'Linkedin',
-            link: 'https://www.linkedin.com/in/dilankarathnasiri',
-            icon: 'fab fa-linkedin',
-        },
-        {
-            label: 'GitHub',
-            link: 'https://github.com/dilanka-rathnasiri',
-            icon: 'fab fa-github',
-        },
-        {
-            label: 'Dev.to',
-            link: 'https://dev.to/dilanka-rathnasiri',
-            icon: 'fab fa-dev',
-        },
-    ];
+export class SocialMediaComponent implements OnInit {
+    socialMediaItems: SocialMediaItem[] = [];
+
+    constructor(private dataService: DataService) {}
+
+    ngOnInit(): void {
+        this.dataService
+            .loadData<SocialMediaItem[]>('social-media')
+            .subscribe((data) => {
+                this.socialMediaItems = data;
+            });
+    }
 }

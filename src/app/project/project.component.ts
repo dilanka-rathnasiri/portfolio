@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 import { ProjectItem } from '../dto/ProjectItem';
 
 @Component({
@@ -7,25 +8,16 @@ import { ProjectItem } from '../dto/ProjectItem';
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss',
 })
-export class ProjectComponent {
-    projects: ProjectItem[] = [
-        {
-            title: 'Awesome Portfolio',
-            description:
-                'A personal portfolio website built with Angular and deployed on AWS',
-            link: 'https://github.com/dilanka-rathnasiri/awesome-portfolio',
-        },
-        {
-            title: 'Cloud Infra Toolkit',
-            description:
-                'Terraform modules and scripts for automating AWS infrastructure',
-            link: 'https://github.com/dilanka-rathnasiri/cloud-infra-toolkit',
-        },
-        {
-            title: 'FastAPI Starter',
-            description:
-                'A starter template for FastAPI projects with Docker and CI/CD',
-            link: 'https://github.com/dilanka-rathnasiri/fastapi-starter',
-        },
-    ];
+export class ProjectComponent implements OnInit {
+    projects: ProjectItem[] = [];
+
+    constructor(private dataService: DataService) {}
+
+    ngOnInit(): void {
+        this.dataService
+            .loadData<ProjectItem[]>('projects')
+            .subscribe((data) => {
+                this.projects = data;
+            });
+    }
 }
