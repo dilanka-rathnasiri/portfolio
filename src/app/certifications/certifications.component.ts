@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CertificateItem } from '../dto/CertificateItem';
+import { DataService } from '../services/data.service';
 
 @Component({
     selector: 'app-certifications',
@@ -7,25 +8,16 @@ import { CertificateItem } from '../dto/CertificateItem';
     templateUrl: './certifications.component.html',
     styleUrl: './certifications.component.scss',
 })
-export class CertificationsComponent {
-    certificates: CertificateItem[] = [
-        {
-            title: 'AWS Certified Solutions Architect',
-            organization: 'Amazon Web Services',
-            time: 'Jan 2023',
-            link: 'https://certificates.example.com/aws-solutions-architect',
-        },
-        {
-            title: 'Google Cloud Professional Engineer',
-            organization: 'Google Cloud',
-            time: 'Mar 2022',
-            link: 'https://certificates.example.com/gcp-professional',
-        },
-        {
-            title: 'Certified Kubernetes Administrator',
-            organization: 'Cloud Native Computing Foundation',
-            time: 'Sep 2021',
-            link: 'https://certificates.example.com/cka',
-        },
-    ];
+export class CertificationsComponent implements OnInit {
+    certificates: CertificateItem[] = [];
+
+    constructor(private dataService: DataService) {}
+
+    ngOnInit(): void {
+        this.dataService
+            .loadData<CertificateItem[]>('certifications')
+            .subscribe((data) => {
+                this.certificates = data;
+            });
+    }
 }

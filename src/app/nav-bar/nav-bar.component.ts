@@ -12,9 +12,9 @@ import { NavBarItem } from '../dto/NavBarItem';
 export class NavBarComponent {
     menuItems: NavBarItem[] = [
         { label: 'Home', link: '/', exact: true },
-        { label: 'Experience', link: '/experience', exact: false },
         { label: 'Projects', link: '/projects', exact: false },
         { label: 'Blogs', link: '/blogs', exact: false },
+        { label: 'Experience', link: '/experience', exact: false },
         { label: 'Certifications', link: '/certifications', exact: false },
     ];
 }

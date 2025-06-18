@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BlogItem } from '../dto/BlogItem';
+import { DataService } from '../services/data.service';
 
 @Component({
     selector: 'app-blog',
@@ -7,25 +8,14 @@ import { BlogItem } from '../dto/BlogItem';
     templateUrl: './blog.component.html',
     styleUrl: './blog.component.scss',
 })
-export class BlogComponent {
-    blogs: BlogItem[] = [
-        {
-            title: 'Understanding Angular Signals',
-            description:
-                'A deep dive into Angular signals and how they improve reactivity in modern applications.',
-            link: 'https://blog.example.com/angular-signals',
-        },
-        {
-            title: 'Deploying with AWS Amplify',
-            description:
-                'Step-by-step guide to deploying your web app using AWS Amplify.',
-            link: 'https://blog.example.com/aws-amplify-deploy',
-        },
-        {
-            title: 'TypeScript Tips & Tricks',
-            description:
-                'Boost your productivity with these essential TypeScript tips.',
-            link: 'https://blog.example.com/typescript-tips',
-        },
-    ];
+export class BlogComponent implements OnInit {
+    blogs: BlogItem[] = [];
+
+    constructor(private dataService: DataService) {}
+
+    ngOnInit(): void {
+        this.dataService.loadData<BlogItem[]>('blogs').subscribe((data) => {
+            this.blogs = data;
+        });
+    }
 }

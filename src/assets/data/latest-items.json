@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Experience",
+        "title": "Senior Software Engineer",
+        "organization": "GTN Tech",
+        "time": "April 2024 - Present",
+        "icon": "fa-solid fa-briefcase"
+    },
+    {
+        "label": "Education",
+        "title": "BSc Engineering Hons. Computer Science and Engineering",
+        "organization": "University of Moratuwa",
+        "time": "Aug 2017 – Jun 2022",
+        "icon": "fa-solid fa-graduation-cap"
+    }
+]
