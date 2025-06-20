@@ -3,10 +3,12 @@ import { DataService } from '../services/data.service';
 import { WhatIDoItem } from '../dto/WhatIDoItem';
 import { SkillItem } from '../dto/SkillItem';
 import { LatestItem } from '../dto/LatestItem';
+import { ExperienceComponent } from '../experience/experience.component';
+import { CertificationsComponent } from '../certifications/certifications.component';
 
 @Component({
     selector: 'app-home',
-    imports: [],
+    imports: [ExperienceComponent, CertificationsComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
 })

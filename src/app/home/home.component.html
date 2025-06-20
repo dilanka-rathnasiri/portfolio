@@ -1,5 +1,5 @@
 <div id="homeMainBox">
-    <div id="homeAboutMeBox" class="container">
+    <div id="homeAboutMeBox" class="container home-section-box">
         <div id="homeAboutMeDescriptionBox">
             <h1>Dilanka Rathnasiri</h1>
             <h4 class="text-secondary">Senior Software Engineer</h4>
@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div id="homeWhatIDoBox" class="container">
+    <div class="container home-section-box home-section-item-box">
         <h1>What I do</h1>
         <div id="homeWhatIDoItemsBox">
             @for (item of whatIDoItems; track item.title) {
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div id="homeSkillsBox" class="container">
+    <div class="container home-section-box home-section-item-box">
         <h1>Skills</h1>
         <div id="homeSkillsItemsBox">
             @for (item of skillsItems; track item.name) {
@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <div id="homeLatestBox" class="container">
+    <div class="container home-section-box home-section-item-box">
         <h1>Latest</h1>
         <div id="homeLatestItemsBox">
             @for (item of latestItems; track item.label) {
@@ -62,5 +62,19 @@
                 </div>
             }
         </div>
+    </div>
+
+    <div class="container home-section-box home-section-item-box">
+        <h1>Experience</h1>
+        <app-experience />
+    </div>
+
+    <div class="container home-section-box home-section-item-box">
+        <h1>Education</h1>
+    </div>
+
+    <div class="container home-section-box home-section-item-box">
+        <h1>Certifications</h1>
+        <app-certifications />
     </div>
 </div>

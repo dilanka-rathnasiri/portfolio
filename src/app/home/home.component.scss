@@ -1,3 +1,8 @@
+.home-section-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 #homeMainBox {
     display: flex;
     flex-direction: column;
@@ -8,8 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     gap: 5rem;
 }
 
@@ -30,28 +33,15 @@
     max-width: 16rem;
 }
 
-#homeWhatIDoBox {
-    display: flex;
-    justify-content: space-between;
-}
-
-#homeLatestBox {
-    display: flex;
-    justify-content: space-between;
-}
-
-#homeSkillOverviewBox {
-    display: flex;
-    justify-content: space-between;
-}
-
-#homeWhatIDoBox {
+.home-section-item-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     gap: 1rem;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+    }
 }
 
 #homeWhatIDoItemsBox {
@@ -67,15 +57,6 @@
     }
 }
 
-#homeSkillsBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    gap: 1rem;
-}
-
 #homeSkillsItemsBox {
     display: flex;
     justify-content: space-between;
@@ -84,15 +65,6 @@
     h6 {
         margin-bottom: 0;
     }
-}
-
-#homeLatestBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    gap: 1rem;
 }
 
 #homeLatestItemsBox {
