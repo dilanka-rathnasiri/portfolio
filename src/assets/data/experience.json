@@ -1,7 +1,7 @@
 [
     {
-        "title": "Senior Software Engineer at Fintech API team",
-        "organization": "GTN Tech, Colombo, Sri Lanka",
+        "title": "Senior Software Engineer",
+        "organization": "GTN Tech",
         "time": "From April 2024 to Present",
         "description": [
             "Improved the availability of the system by cloud migration and container orchestration",
@@ -28,8 +28,8 @@
         ]
     },
     {
-        "title": "Software Engineer at Alpha team",
-        "organization": "GTN Tech, Colombo, Sri Lanka",
+        "title": "Software Engineer",
+        "organization": "GTN Tech",
         "time": "From May 2022 to March 2024",
         "description": [
             "Improved the system availability to 99.9% through cloud migration of the existing system",
@@ -51,8 +51,8 @@
         ]
     },
     {
-        "title": "Software Engineering Intern at Telia team",
-        "organization": "Persistent Systems, Colombo, Sri Lanka",
+        "title": "Software Engineering Intern",
+        "organization": "Persistent Systems",
         "time": "From Oct 2020 to Mar 2021",
         "description": [
             "Improved scalability and maintainability of the system by developing microservices for the existing monolithic legacy system",
