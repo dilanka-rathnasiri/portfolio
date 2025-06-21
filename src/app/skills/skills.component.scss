@@ -1,0 +1,9 @@
+#homeSkillsItemsBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    h6 {
+        margin-bottom: 0;
+    }
+}

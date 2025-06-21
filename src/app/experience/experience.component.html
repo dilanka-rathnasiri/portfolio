@@ -1,30 +1,28 @@
-<div id="experienceMainBox" class="container">
-    @for (item of experienceItems; track item.title) {
-        <div class="card shadow">
-            <div id="experienceItemBox" class="card-body">
-                <div id="experienceItemLeftBox">
-                    <h4>{{ item.title }}</h4>
-                    <h4>{{ item.organization }}</h4>
-                    <h6 class="text-secondary">{{ item.time }}</h6>
-                    <ul>
-                        @for (point of item.description; track point) {
-                            <li>{{ point }}</li>
-                        }
-                    </ul>
-                </div>
-                <div id="experienceItemRightBox">
-                    <h5>Skills</h5>
-                    <div id="experienceItemSkillsBox">
-                        @for (skill of item.techStack; track skill) {
-                            <div class="card text-bg-primary shadow">
-                                <div class="card-body">
-                                    <h6>{{ skill }}</h6>
+<div class="home-section-item-box">
+    <h1>Experience</h1>
+    <div id="experienceMainBox" class="container">
+        @for (item of experienceItems; track item.title) {
+            <div class="card shadow">
+                <div id="experienceItemBox" class="card-body">
+                    <div id="experienceItemLeftBox">
+                        <h4>{{ item.title }}</h4>
+                        <h4>{{ item.organization }}</h4>
+                        <h6 class="text-secondary">{{ item.time }}</h6>
+                    </div>
+                    <div id="experienceItemRightBox">
+                        <h5>Skills</h5>
+                        <div id="experienceItemSkillsBox">
+                            @for (skill of item.techStack; track skill) {
+                                <div class="card text-bg-primary shadow">
+                                    <div class="card-body">
+                                        <h6>{{ skill }}</h6>
+                                    </div>
                                 </div>
-                            </div>
-                        }
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>

@@ -1,7 +1,6 @@
-export interface LatestItem {
+export interface EducationItem {
     label: string;
     title: string;
     organization: string;
     time: string;
-    icon: string;
 }

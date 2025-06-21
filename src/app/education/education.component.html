@@ -1,0 +1,16 @@
+<div class="home-section-item-box">
+    <h1>Education</h1>
+    <div id="homeLatestItemsBox">
+        @for (item of educationItems; track item.label) {
+            <div id="homeLatestSingleItemBox" class="card shadow">
+                <div class="card-body">
+                    <h4>{{ item.label }}</h4>
+                    <i [class]="`${item.icon} fa-3x text-primary`"></i>
+                    <h4>{{ item.title }}</h4>
+                    <h5 class="text-secondary">{{ item.organization }}</h5>
+                    <h6>{{ item.time }}</h6>
+                </div>
+            </div>
+        }
+    </div>
+</div>

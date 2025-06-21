@@ -1,0 +1,23 @@
+#aboutMeMainBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#aboutMeDescriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    p {
+        text-align: center;
+    }
+}
+
+#aboutMePhotoBox img {
+    width: 100%;
+    max-width: 16rem;
+}

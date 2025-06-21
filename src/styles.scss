@@ -17,3 +17,21 @@ body {
 .box-navbar-text.active {
     @extend .fw-bolder;
 }
+
+.home-section-box {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @extend .container;
+}
+
+.home-section-item-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    @extend .home-section-box;
+
+    h1 {
+        text-align: center;
+    }
+}

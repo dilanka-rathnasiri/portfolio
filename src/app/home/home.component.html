@@ -1,80 +1,8 @@
 <div id="homeMainBox">
-    <div id="homeAboutMeBox" class="container home-section-box">
-        <div id="homeAboutMeDescriptionBox">
-            <h1>Dilanka Rathnasiri</h1>
-            <h4 class="text-secondary">Senior Software Engineer</h4>
-            <p>
-                Passionate software engineer with expertise in cloud
-                technologies, microservices architecture, and infrastructure as
-                code.
-            </p>
-        </div>
-        <div id="homeAboutMePhotoBox">
-            <img
-                id="profilePic"
-                src="dilanka.jpg"
-                class="rounded-circle border border-light shadow-lg border-5 profile-pic-img"
-                alt="Dilanka Rathnasiri"
-            />
-        </div>
-    </div>
-
-    <div class="container home-section-box home-section-item-box">
-        <h1>What I do</h1>
-        <div id="homeWhatIDoItemsBox">
-            @for (item of whatIDoItems; track item.title) {
-                <div class="card shadow">
-                    <div class="card-body">
-                        <i [class]="`${item.icon} fa-3x text-primary`"></i>
-                        <h4>{{ item.title }}</h4>
-                        <p class="card-text">{{ item.description }}</p>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-
-    <div class="container home-section-box home-section-item-box">
-        <h1>Skills</h1>
-        <div id="homeSkillsItemsBox">
-            @for (item of skillsItems; track item.name) {
-                <div class="card text-bg-primary shadow">
-                    <div class="card-body">
-                        <h6>{{ item.name }}</h6>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-
-    <div class="container home-section-box home-section-item-box">
-        <h1>Latest</h1>
-        <div id="homeLatestItemsBox">
-            @for (item of latestItems; track item.label) {
-                <div id="homeLatestSingleItemBox" class="card shadow">
-                    <div class="card-body">
-                        <h4>{{ item.label }}</h4>
-                        <i [class]="`${item.icon} fa-3x text-primary`"></i>
-                        <h4>{{ item.title }}</h4>
-                        <h5 class="text-secondary">{{ item.organization }}</h5>
-                        <h6>{{ item.time }}</h6>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-
-    <div class="container home-section-box home-section-item-box">
-        <h1>Experience</h1>
-        <app-experience />
-    </div>
-
-    <div class="container home-section-box home-section-item-box">
-        <h1>Education</h1>
-    </div>
-
-    <div class="container home-section-box home-section-item-box">
-        <h1>Certifications</h1>
-        <app-certifications />
-    </div>
+    <app-about-me />
+    <app-what-i-do />
+    <app-skills />
+    <app-experience />
+    <app-education />
+    <app-certifications />
 </div>
