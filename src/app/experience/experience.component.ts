@@ -6,7 +6,6 @@ import { ExperienceItem } from '../dto/ExperienceItem';
     selector: 'app-experience',
     imports: [],
     templateUrl: './experience.component.html',
-    styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent implements OnInit {
     experienceItems: ExperienceItem[] = [];

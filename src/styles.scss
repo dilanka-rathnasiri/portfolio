@@ -41,6 +41,7 @@ body {
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 
     .card {
         min-width: 25rem;
@@ -51,7 +52,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
     }
 }
 

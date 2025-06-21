@@ -1,13 +1,12 @@
 <div class="home-section-box">
     <h1>Education</h1>
-    <div id="homeLatestItemsBox">
+    <div class="global-section-content-box">
         @for (item of educationItems; track item.label) {
-            <div id="homeLatestSingleItemBox" class="card shadow">
+            <div class="global-item-card">
                 <div class="card-body">
-                    <h4>{{ item.label }}</h4>
                     <i [class]="`${item.icon} fa-3x text-primary`"></i>
                     <h4>{{ item.title }}</h4>
-                    <h5 class="text-secondary">{{ item.organization }}</h5>
+                    <h4 class="text-secondary">{{ item.organization }}</h4>
                     <h6>{{ item.time }}</h6>
                 </div>
             </div>

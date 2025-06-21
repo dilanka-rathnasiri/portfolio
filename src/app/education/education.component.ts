@@ -6,7 +6,6 @@ import { EducationItem } from '../dto/EducationItem';
     selector: 'app-education',
     imports: [],
     templateUrl: './education.component.html',
-    styleUrl: './education.component.scss',
 })
 export class EducationComponent implements OnInit {
     educationItems: any[] = [];
