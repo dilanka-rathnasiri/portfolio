@@ -1,9 +1,9 @@
-<div id="blogsMainBox" class="global-container global-section-content-box">
+<div class="global-container global-section-content-box">
     @for (blog of blogs; track blog.title) {
-        <div class="card shadow">
+        <div class="global-item-card">
             <div class="card-body">
                 <h4>{{ blog.title }}</h4>
-                <p class="card-text">{{ blog.description }}</p>
+                <p class="text-secondary">{{ blog.description }}</p>
                 <a [href]="blog.link" target="_blank" class="btn btn-primary">
                     Read Article on <i class="fa-brands fa-dev"></i>
                 </a>

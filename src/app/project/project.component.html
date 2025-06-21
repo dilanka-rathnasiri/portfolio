@@ -1,9 +1,9 @@
-<div id="projectsMainBox" class="container">
+<div class="global-container global-section-content-box">
     @for (project of projects; track project.title) {
-        <div class="card shadow">
+        <div class="global-item-card">
             <div class="card-body">
                 <h4>{{ project.title }}</h4>
-                <p class="card-text">{{ project.description }}</p>
+                <p class="text-secondary">{{ project.description }}</p>
                 <a
                     [href]="project.link"
                     target="_blank"

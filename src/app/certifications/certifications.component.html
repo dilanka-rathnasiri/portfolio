@@ -1,19 +1,23 @@
-<div class="container global-container home-section-box">
+<div class="home-section-box">
     <h1>Certifications</h1>
-    @for (certificate of certificates; track certificate.title) {
-        <div class="card shadow">
-            <div class="card-body">
-                <h4>{{ certificate.title }}</h4>
-                <h4>{{ certificate.organization }}</h4>
-                <h6 class="text-secondary">{{ certificate.time }}</h6>
-                <a
-                    [href]="certificate.link"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-                    View Certificate
-                </a>
+    <div class="global-section-content-box">
+        @for (certificate of certificates; track certificate.title) {
+            <div class="global-item-card">
+                <div class="card-body">
+                    <h4>{{ certificate.title }}</h4>
+                    <h4 class="text-secondary">
+                        {{ certificate.organization }}
+                    </h4>
+                    <h6>{{ certificate.time }}</h6>
+                    <a
+                        [href]="certificate.link"
+                        target="_blank"
+                        class="btn btn-primary"
+                    >
+                        View Certificate
+                    </a>
+                </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>
