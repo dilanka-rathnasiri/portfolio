@@ -1,36 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
-import { WhatIDoItem } from '../dto/WhatIDoItem';
-import { SkillItem } from '../dto/SkillItem';
-import { LatestItem } from '../dto/LatestItem';
+import { Component } from '@angular/core';
+import { ExperienceComponent } from '../experience/experience.component';
+import { CertificationsComponent } from '../certifications/certifications.component';
+import { WhatIDoComponent } from '../what-i-do/what-i-do.component';
+import { AboutMeComponent } from '../about-me/about-me.component';
+import { SkillsComponent } from '../skills/skills.component';
+import { EducationComponent } from '../education/education.component';
 
 @Component({
     selector: 'app-home',
-    imports: [],
+    imports: [
+        ExperienceComponent,
+        CertificationsComponent,
+        WhatIDoComponent,
+        AboutMeComponent,
+        SkillsComponent,
+        EducationComponent,
+    ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
 })
-export class HomeComponent implements OnInit {
-    whatIDoItems: WhatIDoItem[] = [];
-    skillsItems: SkillItem[] = [];
-    latestItems: LatestItem[] = [];
-
-    constructor(private dataService: DataService) {}
-
-    ngOnInit(): void {
-        // Load what I do items
-        this.dataService.loadData<any[]>('what-i-do').subscribe((data) => {
-            this.whatIDoItems = data;
-        });
-
-        // Load skills
-        this.dataService.loadData<any[]>('skills').subscribe((data) => {
-            this.skillsItems = data;
-        });
-
-        // Load latest items
-        this.dataService.loadData<any[]>('latest-items').subscribe((data) => {
-            this.latestItems = data;
-        });
-    }
-}
+export class HomeComponent {}

@@ -1,11 +1,11 @@
 [
-    { "name": "Java", "icon": "fa-brands fa-java" },
-    { "name": "Python", "icon": "fa-brands fa-python" },
-    { "name": "AWS", "icon": "fa-brands fa-aws" },
-    { "name": "Spring Boot", "icon": "fa-brands fa-java" },
-    { "name": "REST API", "icon": "fa-solid fa-cloud" },
-    { "name": "GitLab CI/CD", "icon": "fa-brands fa-gitlab" },
-    { "name": "Terraform", "icon": "fa-brands fa-dev" },
-    { "name": "FastAPI", "icon": "fa-brands fa-python" },
-    { "name": "Kubernetes", "icon": "fa-brands fa-docker" }
+    { "name": "Java" },
+    { "name": "Python" },
+    { "name": "AWS" },
+    { "name": "Spring Boot" },
+    { "name": "REST API" },
+    { "name": "GitLab CI/CD" },
+    { "name": "Terraform" },
+    { "name": "FastAPI" },
+    { "name": "Kubernetes" }
 ]

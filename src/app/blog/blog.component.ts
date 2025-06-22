@@ -6,7 +6,6 @@ import { DataService } from '../services/data.service';
     selector: 'app-blog',
     imports: [],
     templateUrl: './blog.component.html',
-    styleUrl: './blog.component.scss',
 })
 export class BlogComponent implements OnInit {
     blogs: BlogItem[] = [];

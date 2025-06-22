@@ -14,7 +14,5 @@ export class NavBarComponent {
         { label: 'Home', link: '/', exact: true },
         { label: 'Projects', link: '/projects', exact: false },
         { label: 'Blogs', link: '/blogs', exact: false },
-        { label: 'Experience', link: '/experience', exact: false },
-        { label: 'Certifications', link: '/certifications', exact: false },
     ];
 }

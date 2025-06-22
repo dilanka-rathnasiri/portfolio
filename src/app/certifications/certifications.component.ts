@@ -6,7 +6,6 @@ import { DataService } from '../services/data.service';
     selector: 'app-certifications',
     imports: [],
     templateUrl: './certifications.component.html',
-    styleUrl: './certifications.component.scss',
 })
 export class CertificationsComponent implements OnInit {
     certificates: CertificateItem[] = [];
