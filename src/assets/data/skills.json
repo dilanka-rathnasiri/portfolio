@@ -1,11 +1,12 @@
 [
     { "name": "Java" },
-    { "name": "Python" },
-    { "name": "AWS" },
     { "name": "Spring Boot" },
+    { "name": "AWS" },
+    { "name": "Python" },
+    { "name": "Terraform" },
+    { "name": "Kubernetes" },
     { "name": "REST API" },
     { "name": "GitLab CI/CD" },
-    { "name": "Terraform" },
-    { "name": "FastAPI" },
-    { "name": "Kubernetes" }
+    { "name": "Docker" },
+    { "name": "Linux" }
 ]

@@ -2,16 +2,16 @@
     {
         "title": "Backend Development",
         "icon": "fa-solid fa-server",
-        "description": "Building robust and maintainable applications using Java, Python, and modern frameworks"
+        "description": "Developing reliable, maintainable, and scalable backend systems using Java and Python"
     },
     {
         "title": "Cloud Engineering",
         "icon": "fa-solid fa-cloud",
-        "description": "Designing and implementing scalable cloud solutions using AWS services and best practices"
+        "description": "Designing scalable and cost-efficient cloud architectures using AWS and industry best practices"
     },
     {
         "title": "DevOps",
         "icon": "fa-solid fa-gears",
-        "description": "Implementing CI/CD pipelines and infrastructure as code using Terraform and GitLab CI/CD"
+        "description": "Implementing CI/CD pipelines and managing infrastructure as code using Terraform and Python scripting"
     }
 ]
