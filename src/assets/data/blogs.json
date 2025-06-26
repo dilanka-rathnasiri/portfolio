@@ -1,17 +1,42 @@
 [
     {
-        "title": "Understanding Angular Signals",
-        "description": "A deep dive into Angular signals and how they improve reactivity in modern applications.",
-        "link": "https://blog.example.com/angular-signals"
+        "title": "Kubernetes ReplicaSet",
+        "description": "Understanding Kubernetes ReplicaSets and their role in container orchestration",
+        "link": "https://dev.to/dilanka-rathnasiri/kubernetes-replicaset-42ck"
     },
     {
-        "title": "Deploying with AWS Amplify",
-        "description": "Step-by-step guide to deploying your web app using AWS Amplify.",
-        "link": "https://blog.example.com/aws-amplify-deploy"
+        "title": "Kubernetes Pods",
+        "description": "An introduction to Kubernetes Pods and their importance in container orchestration",
+        "link": "https://dev.to/dilanka-rathnasiri/kubernetes-pods-4a5n"
     },
     {
-        "title": "TypeScript Tips & Tricks",
-        "description": "Boost your productivity with these essential TypeScript tips.",
-        "link": "https://blog.example.com/typescript-tips"
+        "title": "Kubernetes Cluster Architecture",
+        "description": "Exploring the architecture of a Kubernetes cluster and its components",
+        "link": "https://dev.to/dilanka-rathnasiri/kubernetes-cluster-architecture-3f87"
+    },
+    {
+        "title": "Deploying Kubernetes dashboard on a Kubernetes cluster",
+        "description": "Step-by-step guide to deploying and accessing the Kubernetes dashboard on a Kubernetes cluster",
+        "link": "https://dev.to/dilanka-rathnasiri/deploying-kubernetes-dashboard-on-a-kubernetes-cluster-kmi"
+    },
+    {
+        "title": "Introduction to Authentication and Authorization",
+        "description": "Understanding the basics of authentication and authorization in Identity and Access Management",
+        "link": "https://dev.to/dilanka-rathnasiri/introduction-to-authentication-and-authorization-7mh"
+    },
+    {
+        "title": "Delivering images in AWS S3 bucket through AWS API gateway",
+        "description": "Step-by-step guide to deliver images in AWS S3 bucket through AWS API gateway",
+        "link": "https://dev.to/dilanka-rathnasiri/delivering-images-in-aws-s3-bucket-through-aws-api-gateway-49e"
+    },
+    {
+        "title": "Introduction to Java Servlets",
+        "description": "Getting started with Java Servlets for web development",
+        "link": "https://dev.to/dilanka-rathnasiri/introduction-to-java-servlets-32oc"
+    },
+    {
+        "title": "Java Method overriding",
+        "description": "Understanding method overriding in Java with examples",
+        "link": "https://dev.to/dilanka-rathnasiri/java-method-overriding-6e8"
     }
 ]

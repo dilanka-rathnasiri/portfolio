@@ -1,17 +1,47 @@
 [
     {
-        "title": "Awesome Portfolio",
-        "description": "A personal portfolio website built with Angular and deployed on AWS",
-        "link": "https://github.com/dilanka-rathnasiri/awesome-portfolio"
+        "title": "py-sse-client",
+        "description": "A simple asynchronous Server Sent Events (SSE) client for Python using aiohttp",
+        "link": "https://github.com/dilanka-rathnasiri/py-sse-client"
     },
     {
-        "title": "Cloud Infra Toolkit",
-        "description": "Terraform modules and scripts for automating AWS infrastructure",
-        "link": "https://github.com/dilanka-rathnasiri/cloud-infra-toolkit"
+        "title": "portfolio",
+        "description": "My personal portfolio website built with Angular",
+        "link": "https://github.com/dilanka-rathnasiri/portfolio"
     },
     {
-        "title": "FastAPI Starter",
-        "description": "A starter template for FastAPI projects with Docker and CI/CD",
-        "link": "https://github.com/dilanka-rathnasiri/fastapi-starter"
+        "title": "data-dashboard",
+        "description": "Sample data dashboard for visualizing and analyzing datasets",
+        "link": "https://github.com/dilanka-rathnasiri/data-dashboard"
+    },
+    {
+        "title": "fork of iesl-chapter-web",
+        "description": "Fork of my contributions to the IESL Student Chapter of University of Moratuwa",
+        "link": "https://github.com/dilanka-rathnasiri/iesl-chapter-web"
+    },
+    {
+        "title": "k8s-hpa",
+        "description": "Simple cli app for calculation of horizontal pod autoscaler (HPA) in Kubernetes",
+        "link": "https://github.com/dilanka-rathnasiri/k8s-hpa"
+    },
+    {
+        "title": "simple-k8s",
+        "description": "Infrastructure as Code for deploying kubernetes dashboard and REST-API web services in a kubernetes cluster",
+        "link": "https://github.com/dilanka-rathnasiri/simple-k8s"
+    },
+    {
+        "title": "launch-ec2",
+        "description": "Pulumi infrastructure as code for launching EC2 instances with TypeScript",
+        "link": "https://github.com/dilanka-rathnasiri/launch-ec2"
+    },
+    {
+        "title": "s3-with-versioning",
+        "description": "Pulumi TypeScript infrastructure as code for AWS S3 bucket with versioning and lifecycle policies",
+        "link": "https://github.com/dilanka-rathnasiri/s3-with-versioning"
+    },
+    {
+        "title": "simple-utils",
+        "description": "A simple set of utils for day-to-day use",
+        "link": "https://github.com/dilanka-rathnasiri/simple-utils"
     }
 ]

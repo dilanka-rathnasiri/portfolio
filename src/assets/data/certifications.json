@@ -1,20 +1,14 @@
 [
     {
-        "title": "AWS Certified Solutions Architect",
+        "title": "AWS Certified Solutions Architect – Associate",
         "organization": "Amazon Web Services",
-        "time": "Jan 2023",
-        "link": "https://certificates.example.com/aws-solutions-architect"
+        "time": "January 2023 - January 2026",
+        "link": "https://www.credly.com/badges/f7bd7fe8-9b2a-4a12-92d6-8f4f775b62a3/linked_in_profile?trk=public_profile_certification-title"
     },
     {
-        "title": "Google Cloud Professional Engineer",
-        "organization": "Google Cloud",
-        "time": "Mar 2022",
-        "link": "https://certificates.example.com/gcp-professional"
-    },
-    {
-        "title": "Certified Kubernetes Administrator",
-        "organization": "Cloud Native Computing Foundation",
-        "time": "Sep 2021",
-        "link": "https://certificates.example.com/cka"
+        "title": "Microsoft Certified: Azure Fundamentals",
+        "organization": "Microsoft",
+        "time": "May 2021",
+        "link": "https://www.credly.com/badges/ce2e2597-2502-441f-8021-8e97505729b0?source=linked_in_profile&trk=public_profile_see-credential"
     }
 ]
