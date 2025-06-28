@@ -9,6 +9,6 @@ export class DataService {
     constructor(private http: HttpClient) {}
 
     public loadData<T>(fileName: string): Observable<T> {
-        return this.http.get<T>(`/assets/data/${fileName}.json`);
+        return this.http.get<T>(`assets/data/${fileName}.json`);
     }
 }

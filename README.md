@@ -2,6 +2,8 @@
 
 A modern portfolio website to showcase my projects and skills as a developer.
 
+**Web:** https://dilanka-rathnasiri.github.io/portfolio
+
 ## Why This Portfolio?
 
 I built this simple web app to present my work and technical background professionally. I chose Angular because of its modular architecture, robust tooling, and clear documentation.
