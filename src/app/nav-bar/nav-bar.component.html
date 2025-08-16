@@ -1,25 +1,35 @@
 <nav class="navbar navbar-expand-lg bg-primary">
-    <div id="navBarMainBox" class="container">
-        <div>
-            <a class="navbar-brand fw-bold text-white" routerLink="/"
-                >Dilanka Rathnasiri</a
+    <div class="container">
+        <div class="navbar-brand-container">
+            <a class="navbar-brand fw-bold text-white" routerLink="/">Dilanka Rathnasiri</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                (click)="isMenuCollapsed = !isMenuCollapsed"
+                [attr.aria-expanded]="!isMenuCollapsed"
+                aria-label="Toggle navigation"
             >
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
 
-        <div id="navBarItemsBox">
-            @for (item of menuItems; track item.label) {
-                <a
-                    class="box-navbar-text"
-                    [routerLink]="item.link"
-                    routerLinkActive="active"
-                    aria-current="page"
-                    [routerLinkActiveOptions]="{ exact: item.exact }"
-                >
-                    {{ item.label }}
-                </a>
-            }
+        <div class="navbar-collapse" [class.show]="!isMenuCollapsed">
+            <div id="navBarItemsBox">
+                @for (item of menuItems; track item.label) {
+                    <a
+                        class="nav-link"
+                        [routerLink]="item.link"
+                        routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: item.exact }"
+                        (click)="isMenuCollapsed = true"
+                    >
+                        {{ item.label }}
+                    </a>
+                }
+            </div>
+            <div class="social-media-container">
+                <app-social-media />
+            </div>
         </div>
-
-        <app-social-media />
     </div>
 </nav>
