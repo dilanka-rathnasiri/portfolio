@@ -1,17 +1,14 @@
-<div class="global-container global-section-content-box">
+<div id="mainGrid" class="container">
     @for (project of projects; track project.title) {
-        <div class="global-item-card">
-            <div class="card-body">
-                <h4>{{ project.title }}</h4>
-                <p class="text-secondary">{{ project.description }}</p>
-                <a
-                    [href]="project.link"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-                    View on <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-        </div>
+        <p-card [header]="project.title" [subheader]="project.description">
+            <p-footer>
+                <p-button
+                    label="View on"
+                    icon="pi pi-github"
+                    iconPos="right"
+                    (onClick)="openGitHubLink(project.link)"
+                ></p-button>
+            </p-footer>
+        </p-card>
     }
 </div>

@@ -1,0 +1,14 @@
+#mainGrid {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+p-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
