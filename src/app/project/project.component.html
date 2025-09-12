@@ -1,12 +1,16 @@
-<div id="mainGrid" class="container">
+<div class="container custom-grid">
     @for (project of projects; track project.title) {
-        <p-card [header]="project.title" [subheader]="project.description">
+        <p-card
+            [header]="project.title"
+            [subheader]="project.description"
+            class="custom-card"
+        >
             <p-footer>
                 <p-button
                     label="View on"
                     icon="pi pi-github"
                     iconPos="right"
-                    (onClick)="openGitHubLink(project.link)"
+                    (onClick)="linkService.openLinkInNewTab(project.link)"
                 ></p-button>
             </p-footer>
         </p-card>

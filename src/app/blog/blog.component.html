@@ -1,13 +1,14 @@
-<div class="global-container global-section-content-box">
+<div class="custom-grid">
     @for (blog of blogs; track blog.title) {
-        <div class="global-item-card">
-            <div class="card-body">
-                <h4>{{ blog.title }}</h4>
-                <p class="text-secondary">{{ blog.description }}</p>
-                <a [href]="blog.link" target="_blank" class="btn btn-primary">
-                    Read Article on <i class="fa-brands fa-dev"></i>
-                </a>
-            </div>
-        </div>
+        <p-card [header]="blog.title" [subheader]="blog.description">
+            <p-footer>
+                <p-button
+                    label="Read Article on"
+                    icon="fa-brands fa-dev"
+                    iconPos="right"
+                    (onClick)="linkService.openLinkInNewTab(blog.link)"
+                ></p-button>
+            </p-footer>
+        </p-card>
     }
 </div>
