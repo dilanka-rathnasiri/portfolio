@@ -1,23 +1,20 @@
-<div class="home-section-box">
+<div class="custom-home-section-main-box">
     <h1>Certifications</h1>
-    <div class="global-section-content-box">
+    <div class="custom-home-section-items-flex-box">
         @for (certificate of certificates; track certificate.title) {
-            <div class="global-item-card">
-                <div class="card-body">
-                    <h4>{{ certificate.title }}</h4>
-                    <h4 class="text-secondary">
-                        {{ certificate.organization }}
-                    </h4>
-                    <h6>{{ certificate.time }}</h6>
-                    <a
-                        [href]="certificate.link"
-                        target="_blank"
-                        class="btn btn-primary"
+            <p-card
+                [header]="certificate.title"
+                [subheader]="certificate.organization"
+            >
+                <p-footer>
+                    <p>{{ certificate.time }}</p>
+                    <p-button
+                        label="View Certificate"
+                        (onClick)="openCertificateLink(certificate.link)"
                     >
-                        View Certificate
-                    </a>
-                </div>
-            </div>
+                    </p-button>
+                </p-footer>
+            </p-card>
         }
     </div>
 </div>

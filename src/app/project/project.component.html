@@ -1,9 +1,6 @@
 <div class="container custom-grid">
     @for (project of projects; track project.title) {
-        <p-card
-            [header]="project.title"
-            [subheader]="project.description"
-        >
+        <p-card [header]="project.title" [subheader]="project.description">
             <p-footer>
                 <p-button
                     label="View on"
