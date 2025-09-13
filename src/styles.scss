@@ -62,6 +62,36 @@ body {
     @extend .shadow;
 }
 
+.custom-home-section-main-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    @extend .container;
+}
+
+.custom-home-section-items-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.custom-card {
+    min-width: 25rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    i {
+        color: bootstrap.$primary;
+        @extend .fa-3x;
+        @extend .mt-3;
+    }
+}
+
 .custom-grid {
     @extend .container;
     display: grid;

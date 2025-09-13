@@ -8,7 +8,6 @@ import { DataService } from '../services/data.service';
     selector: 'app-what-i-do',
     imports: [CommonModule, CardModule],
     templateUrl: './what-i-do.component.html',
-    styleUrl: './what-i-do.component.scss',
 })
 export class WhatIDoComponent implements OnInit {
     whatIDoItems: WhatIDoItem[] = [];

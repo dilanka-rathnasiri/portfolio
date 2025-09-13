@@ -1,8 +1,8 @@
-<div id="whatIDoMainBox">
+<div class="custom-home-section-main-box">
     <h1>What I Do</h1>
-    <div id="whatIDoItemsFlexBox">
+    <div class="custom-home-section-items-flex-box">
         @for (item of whatIDoItems; track item.title) {
-            <p-card>
+            <p-card class="custom-card">
                 <ng-template #header>
                     <i [class]="item.icon"></i>
                 </ng-template>

@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CardModule } from 'primeng/card';
 import { SkillItem } from '../dto/SkillItem';
 import { DataService } from '../services/data.service';
 
 @Component({
     selector: 'app-skills',
-    imports: [],
+    imports: [CommonModule, CardModule],
     templateUrl: './skills.component.html',
-    styleUrl: './skills.component.scss',
 })
 export class SkillsComponent implements OnInit {
     skillsItems: SkillItem[] = [];

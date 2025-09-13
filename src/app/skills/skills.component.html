@@ -1,12 +1,8 @@
-<div class="home-section-box">
+<div class="custom-home-section-main-box">
     <h1>Skills</h1>
-    <div id="homeSkillsItemsBox">
+    <div class="custom-home-section-items-flex-box">
         @for (item of skillsItems; track item.name) {
-            <div class="global-item-card text-bg-primary">
-                <div class="card-body">
-                    <h6>{{ item.name }}</h6>
-                </div>
-            </div>
+            <p-card [header]="item.name"></p-card>
         }
     </div>
 </div>
