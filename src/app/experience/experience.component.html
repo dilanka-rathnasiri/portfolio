@@ -1,14 +1,12 @@
-<div class="home-section-box">
+<div class="custom-home-section-main-box">
     <h1>Experience</h1>
-    <div class="global-section-content-box">
+    <div class="custom-home-section-items-flex-box">
         @for (item of experienceItems; track item.title) {
-            <div class="global-item-card">
-                <div class="card-body">
-                    <h4>{{ item.title }}</h4>
-                    <h4 class="text-secondary">{{ item.organization }}</h4>
-                    <h6>{{ item.time }}</h6>
-                </div>
-            </div>
+            <p-card [header]="item.title" [subheader]="item.organization">
+                <p-footer>
+                    {{ item.time }}
+                </p-footer>
+            </p-card>
         }
     </div>
 </div>

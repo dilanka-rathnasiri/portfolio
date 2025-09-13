@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../services/data.service';
+import { CommonModule } from '@angular/common';
+import { CardModule } from 'primeng/card';
 import { ExperienceItem } from '../dto/ExperienceItem';
+import { DataService } from '../services/data.service';
 
 @Component({
     selector: 'app-experience',
-    imports: [],
+    imports: [CommonModule, CardModule],
     templateUrl: './experience.component.html',
 })
 export class ExperienceComponent implements OnInit {
