@@ -1,5 +1,10 @@
 [
     {
+        "title": "otp-cli-utils",
+        "description": "A simple command-line utility for validating TOTP (Time-based One-Time Password) codes",
+        "link": "https://github.com/dilanka-rathnasiri/otp-cli-utils"
+    },
+    {
         "title": "py-sse-client",
         "description": "A simple asynchronous Server Sent Events (SSE) client for Python using aiohttp",
         "link": "https://github.com/dilanka-rathnasiri/py-sse-client"
@@ -8,6 +13,11 @@
         "title": "portfolio",
         "description": "My personal portfolio website built with Angular",
         "link": "https://github.com/dilanka-rathnasiri/portfolio"
+    },
+    {
+        "title": "simple-k8s",
+        "description": "A minimal Kubernetes cluster setup to demonstrate essential tools for modern cloud native app development",
+        "link": "https://github.com/dilanka-rathnasiri/simple-k8s"
     },
     {
         "title": "data-dashboard",
@@ -25,13 +35,8 @@
         "link": "https://github.com/dilanka-rathnasiri/k8s-hpa"
     },
     {
-        "title": "simple-k8s",
-        "description": "Infrastructure as Code for deploying kubernetes dashboard and REST-API web services in a kubernetes cluster",
-        "link": "https://github.com/dilanka-rathnasiri/simple-k8s"
-    },
-    {
         "title": "launch-ec2",
-        "description": "Pulumi infrastructure as code for launching EC2 instances with TypeScript",
+        "description": "Terraform infrastructure as code for launching an EC2 instance",
         "link": "https://github.com/dilanka-rathnasiri/launch-ec2"
     },
     {
