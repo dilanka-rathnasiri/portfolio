@@ -4,6 +4,10 @@
     gap: 2rem;
     flex-wrap: wrap;
 
+    .custom-card {
+        min-width: 0;
+    }
+
     h6 {
         margin-bottom: 0;
     }
