@@ -41,3 +41,11 @@ ng build --configuration=production
 ```
 
 Build output will be in the `dist/` directory.
+
+## Deploy to GitHub pages
+
+To deploy the Angular app to GitHub pages
+
+```bash
+ng deploy
+```
