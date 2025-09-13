@@ -1,15 +1,21 @@
-<div class="home-section-box">
+<div class="custom-home-section-main-box">
     <h1>Education</h1>
-    <div class="global-section-content-box">
+    <div class="custom-home-section-items-flex-box">
         @for (item of educationItems; track item.label) {
-            <div class="global-item-card">
-                <div class="card-body">
-                    <i [class]="`${item.icon} fa-3x text-primary`"></i>
-                    <h4>{{ item.title }}</h4>
-                    <h4 class="text-secondary">{{ item.organization }}</h4>
-                    <h6>{{ item.time }}</h6>
-                </div>
-            </div>
+            <p-card class="custom-card">
+                <ng-template #header>
+                    <i [class]="item.icon"></i>
+                </ng-template>
+                <ng-template #title>
+                    {{ item.title }}
+                </ng-template>
+                <ng-template #subtitle>
+                    {{ item.organization }}
+                </ng-template>
+                <p-footer>
+                    {{ item.time }}
+                </p-footer>
+            </p-card>
         }
     </div>
 </div>
