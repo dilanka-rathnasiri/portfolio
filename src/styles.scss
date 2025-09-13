@@ -8,6 +8,8 @@ body {
     background-color: #e7f1ff;
 }
 
+// ---------------------------------------------------------
+
 // common
 
 .custom-wrap-flex-row {
@@ -33,6 +35,17 @@ body {
     }
 }
 
+// ---------------------------------------------------------
+
+// nav bar and footer
+
+.bar-flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ---------------------------------------------------------
+
 // nav bar
 
 .box-navbar-text {
@@ -45,6 +58,8 @@ body {
 .box-navbar-text.active {
     @extend .fw-bolder;
 }
+
+// ---------------------------------------------------------
 
 // home section
 .home-section-box {
