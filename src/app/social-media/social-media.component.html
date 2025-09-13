@@ -2,8 +2,8 @@
     @for (item of socialMediaItems; track item.label) {
         <i
             [class]="item.icon"
-            (onClick)="openLink(item.link)"
-            class="box-navbar-text"
+            (click)="openLink(item.link)"
+            class="box-navbar-text cursor-pointer"
         ></i>
     }
 </div>
