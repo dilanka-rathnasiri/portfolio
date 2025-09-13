@@ -1,0 +1,12 @@
+[
+    { "name": "Java" },
+    { "name": "Spring Boot" },
+    { "name": "AWS" },
+    { "name": "Python" },
+    { "name": "Terraform" },
+    { "name": "Kubernetes" },
+    { "name": "REST API" },
+    { "name": "GitLab CI/CD" },
+    { "name": "Docker" },
+    { "name": "Linux" }
+]
