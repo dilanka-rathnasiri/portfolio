@@ -1,14 +1,18 @@
-<div class="home-section-box">
-    <h1>What I do</h1>
-    <div class="global-section-content-box">
+<div id="whatIDoMainBox">
+    <h1>What I Do</h1>
+    <div id="whatIDoItemsFlexBox">
         @for (item of whatIDoItems; track item.title) {
-            <div class="global-item-card">
-                <div class="card-body">
-                    <i [class]="`${item.icon} fa-3x text-primary`"></i>
-                    <h4>{{ item.title }}</h4>
-                    <p class="card-text">{{ item.description }}</p>
-                </div>
-            </div>
+            <p-card>
+                <ng-template #header>
+                    <i [class]="item.icon"></i>
+                </ng-template>
+                <ng-template #title>
+                    {{ item.title }}
+                </ng-template>
+                <ng-template #subtitle>
+                    {{ item.description }}
+                </ng-template>
+            </p-card>
         }
     </div>
 </div>
