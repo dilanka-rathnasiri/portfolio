@@ -1,12 +1,12 @@
-<div class="global-container global-section-content-box">
+<div class="custom-wrap-flex-row">
     @for (blog of blogs; track blog.title) {
-        <div class="global-item-card">
+        <div class="custom-card">
             <div class="card-body">
                 <h4>{{ blog.title }}</h4>
                 <p class="text-secondary">{{ blog.description }}</p>
-                <a [href]="blog.link" target="_blank" class="btn btn-primary">
+                <button (click)="openLink(blog.link)" class="btn btn-primary">
                     Read Article on <i class="fa-brands fa-dev"></i>
-                </a>
+                </button>
             </div>
         </div>
     }

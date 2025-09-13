@@ -1,16 +1,15 @@
-<div class="global-container global-section-content-box">
+<div class="custom-wrap-flex-row">
     @for (project of projects; track project.title) {
-        <div class="global-item-card">
+        <div class="custom-card">
             <div class="card-body">
                 <h4>{{ project.title }}</h4>
                 <p class="text-secondary">{{ project.description }}</p>
-                <a
-                    [href]="project.link"
-                    target="_blank"
+                <button
+                    (click)="openLink(project.link)"
                     class="btn btn-primary"
                 >
                     View on <i class="fa-brands fa-github"></i>
-                </a>
+                </button>
             </div>
         </div>
     }

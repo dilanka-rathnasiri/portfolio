@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
+import { LinkService } from '../services/link.service';
 import { SocialMediaItem } from '../dto/SocialMediaItem';
 
 @Component({
@@ -11,7 +12,14 @@ import { SocialMediaItem } from '../dto/SocialMediaItem';
 export class SocialMediaComponent implements OnInit {
     socialMediaItems: SocialMediaItem[] = [];
 
-    constructor(private dataService: DataService) {}
+    openLink(link: string): void {
+        this.linkService.openLinkInNewTab(link);
+    }
+
+    constructor(
+        private dataService: DataService,
+        private linkService: LinkService
+    ) {}
 
     ngOnInit(): void {
         this.dataService

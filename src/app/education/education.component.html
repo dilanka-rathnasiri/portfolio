@@ -1,10 +1,12 @@
 <div class="home-section-box">
     <h1>Education</h1>
-    <div class="global-section-content-box">
-        @for (item of educationItems; track item.label) {
-            <div class="global-item-card">
+    <div class="custom-wrap-flex-row">
+        @for (item of educationItems; track item.title) {
+            <div class="custom-card">
                 <div class="card-body">
-                    <i [class]="`${item.icon} fa-3x text-primary`"></i>
+                    <i
+                        class="fa-solid fa-graduation-cap fa-3x text-primary"
+                    ></i>
                     <h4>{{ item.title }}</h4>
                     <h4 class="text-secondary">{{ item.organization }}</h4>
                     <h6>{{ item.time }}</h6>

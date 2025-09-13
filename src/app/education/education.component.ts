@@ -8,7 +8,7 @@ import { EducationItem } from '../dto/EducationItem';
     templateUrl: './education.component.html',
 })
 export class EducationComponent implements OnInit {
-    educationItems: any[] = [];
+    educationItems: EducationItem[] = [];
 
     constructor(private dataService: DataService) {}
 

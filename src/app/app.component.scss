@@ -4,6 +4,8 @@
     height: 100%;
 }
 
-#rootFooter {
-    margin-top: auto;
+#rootDisplay {
+    flex-grow: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }

@@ -1,5 +1,5 @@
 <div class="container-fluid bg-primary pt-2 pb-2">
-    <div id="footerMainBox" class="container">
+    <div class="container bar-flex-row">
         <span class="text-white">
             <i class="fa-regular fa-copyright"></i>
             {{ currentYear }} Dilanka Rathnasiri. All rights reserved.
@@ -7,13 +7,15 @@
 
         <span class="text-white">
             Developed with
-            <a href="https://angular.dev" target="_blank">
-                <i class="fa-brands fa-angular text-white"></i>
-            </a>
+            <i
+                class="fa-brands fa-angular text-white cursor-pointer"
+                (click)="openLink('https://angular.dev')"
+            ></i>
             and
-            <a href="https://getbootstrap.com" target="_blank">
-                <i class="fa-brands fa-bootstrap text-white"></i>
-            </a>
+            <i
+                class="fa-brands fa-bootstrap text-white cursor-pointer"
+                (click)="openLink('https://getbootstrap.com')"
+            ></i>
         </span>
 
         <app-social-media />
