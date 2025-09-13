@@ -1,12 +1,9 @@
 <div id="socialMediaMainBox">
     @for (item of socialMediaItems; track item.label) {
-        <a
+        <i
+            [class]="item.icon"
+            (onClick)="openLink(item.link)"
             class="box-navbar-text"
-            aria-current="page"
-            [href]="item.link"
-            target="_blank"
-        >
-            <i [class]="item.icon"></i>
-        </a>
+        ></i>
     }
 </div>

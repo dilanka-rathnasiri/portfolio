@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CertificateItem } from '../dto/CertificateItem';
 import { DataService } from '../services/data.service';
+import { LinkService } from '../services/link.service';
 
 @Component({
     selector: 'app-certifications',
@@ -10,7 +11,14 @@ import { DataService } from '../services/data.service';
 export class CertificationsComponent implements OnInit {
     certificates: CertificateItem[] = [];
 
-    constructor(private dataService: DataService) {}
+    openLink(link: string): void {
+        this.linkService.openLinkInNewTab(link);
+    }
+
+    constructor(
+        private dataService: DataService,
+        private linkService: LinkService
+    ) {}
 
     ngOnInit(): void {
         this.dataService

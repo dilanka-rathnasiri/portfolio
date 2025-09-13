@@ -7,13 +7,15 @@
 
         <span class="text-white">
             Developed with
-            <a href="https://angular.dev" target="_blank">
-                <i class="fa-brands fa-angular text-white"></i>
-            </a>
+            <i
+                class="fa-brands fa-angular text-white"
+                (onClick)="openLink('https://angular.dev')"
+            ></i>
             and
-            <a href="https://getbootstrap.com" target="_blank">
-                <i class="fa-brands fa-bootstrap text-white"></i>
-            </a>
+            <i
+                class="fa-brands fa-bootstrap text-white"
+                (onClick)="openLink('https://getbootstrap.com')"
+            ></i>
         </span>
 
         <app-social-media />
