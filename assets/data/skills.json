@@ -1,0 +1,81 @@
+[
+    {
+        "category": "Languages & Frameworks",
+        "skills": [
+            { "name": "Java", "icon": "fa-brands fa-java text-red-500" },
+            { "name": "Python", "icon": "fa-brands fa-python text-blue-500" },
+            { "name": "Go", "icon": "fa-brands fa-golang text-cyan-500" },
+            {
+                "name": "Spring Boot",
+                "icon": "fa-solid fa-leaf text-green-500"
+            },
+            { "name": "FastAPI", "icon": "fa-solid fa-bolt text-teal-500" }
+        ]
+    },
+    {
+        "category": "Containers & Orchestration",
+        "skills": [
+            {
+                "name": "Kubernetes",
+                "icon": "fa-solid fa-dharmachakra text-blue-600"
+            },
+            { "name": "Docker", "icon": "fa-brands fa-docker text-blue-400" },
+            {
+                "name": "Amazon EKS",
+                "icon": "fa-solid fa-cubes text-orange-400"
+            },
+            {
+                "name": "Amazon ECS",
+                "icon": "fa-solid fa-cube text-orange-400"
+            },
+            { "name": "Knative", "icon": "fa-solid fa-server text-blue-500" }
+        ]
+    },
+    {
+        "category": "Cloud & DevOps",
+        "skills": [
+            { "name": "AWS", "icon": "fa-brands fa-aws text-orange-500" },
+            {
+                "name": "Terraform",
+                "icon": "fa-solid fa-cloud-arrow-up text-purple-500"
+            },
+            {
+                "name": "GitLab CI/CD",
+                "icon": "fa-brands fa-gitlab text-orange-600"
+            }
+        ]
+    },
+    {
+        "category": "APIs & Databases",
+        "skills": [
+            {
+                "name": "REST API",
+                "icon": "fa-solid fa-exchange-alt text-slate-500"
+            },
+            {
+                "name": "Envoy Gateway",
+                "icon": "fa-solid fa-hexagon text-fuchsia-500"
+            },
+            { "name": "ApiDog", "icon": "fa-solid fa-bone text-blue-500" },
+            {
+                "name": "PostgreSQL",
+                "icon": "fa-solid fa-database text-blue-600"
+            },
+            { "name": "Redis", "icon": "fa-solid fa-layer-group text-red-600" }
+        ]
+    },
+    {
+        "category": "Observability & Monitoring",
+        "skills": [
+            {
+                "name": "Datadog",
+                "icon": "fa-solid fa-paw text-purple-600"
+            },
+            { "name": "Fluent Bit", "icon": "fa-solid fa-dove text-cyan-500" },
+            {
+                "name": "AWS CloudWatch",
+                "icon": "fa-solid fa-magnifying-glass-chart text-orange-500"
+            }
+        ]
+    }
+]
