@@ -1,0 +1,143 @@
+[
+    {
+        "category": "Programming Languages",
+        "skills": [
+            {
+                "name": "Java",
+                "icon": "fa-brands fa-java text-red-500"
+            },
+            {
+                "name": "Go",
+                "icon": "fa-brands fa-golang text-cyan-500"
+            },
+            {
+                "name": "Python",
+                "icon": "fa-brands fa-python text-blue-500"
+            }
+        ]
+    },
+    {
+        "category": "Backend Frameworks",
+        "skills": [
+            {
+                "name": "Spring Boot",
+                "icon": "fa-solid fa-leaf text-green-500"
+            },
+            {
+                "name": "Go Echo",
+                "icon": "fa-solid fa-wave-square text-cyan-500"
+            },
+            {
+                "name": "FastAPI",
+                "icon": "fa-solid fa-bolt text-teal-500"
+            }
+        ]
+    },
+    {
+        "category": "Cloud Computing",
+        "skills": [
+            {
+                "name": "Amazon Web Services (AWS)",
+                "icon": "fa-brands fa-aws text-orange-500"
+            }
+        ]
+    },
+    {
+        "category": "Containers & Orchestration",
+        "skills": [
+            {
+                "name": "Kubernetes",
+                "icon": "fa-solid fa-dharmachakra text-blue-600"
+            },
+            {
+                "name": "Docker",
+                "icon": "fa-brands fa-docker text-blue-400"
+            },
+            {
+                "name": "Amazon EKS",
+                "icon": "fa-solid fa-cubes text-orange-400"
+            },
+            {
+                "name": "Amazon ECS",
+                "icon": "fa-solid fa-cube text-orange-400"
+            },
+            {
+                "name": "Knative",
+                "icon": "fa-solid fa-server text-blue-500"
+            }
+        ]
+    },
+    {
+        "category": "Messaging & Event Streaming",
+        "skills": [
+            {
+                "name": "Apache Kafka",
+                "icon": "fa-solid fa-tower-broadcast text-orange-500"
+            }
+        ]
+    },
+    {
+        "category": "API Development and Management",
+        "skills": [
+            {
+                "name": "REST API",
+                "icon": "fa-solid fa-exchange-alt text-slate-500"
+            },
+            {
+                "name": "Envoy Gateway",
+                "icon": "fa-solid fa-hexagon text-fuchsia-500"
+            },
+            {
+                "name": "ApiDog",
+                "icon": "fa-solid fa-bone text-blue-500"
+            }
+        ]
+    },
+    {
+        "category": "DevOps and CI/CD",
+        "skills": [
+            {
+                "name": "Terraform",
+                "icon": "fa-solid fa-cloud-arrow-up text-purple-500"
+            },
+            {
+                "name": "GitLab CI/CD",
+                "icon": "fa-brands fa-gitlab text-orange-600"
+            },
+            {
+                "name": "Linux",
+                "icon": "fa-brands fa-linux text-slate-400"
+            }
+        ]
+    },
+    {
+        "category": "Databases",
+        "skills": [
+            {
+                "name": "PostgreSQL",
+                "icon": "fa-solid fa-database text-blue-600"
+            },
+            {
+                "name": "Redis",
+                "icon": "fa-solid fa-layer-group text-red-600"
+            }
+        ]
+    },
+    {
+        "category": "Monitoring, Logging, and Observability",
+        "skills": [
+            {
+                "name": "Datadog",
+                "icon": "fa-solid fa-paw text-purple-600"
+            },
+            {
+                "name": "Fluent Bit",
+                "icon": "fa-solid fa-dove text-cyan-500"
+            },
+            {
+                "name": "AWS CloudWatch",
+                "icon": "fa-solid fa-magnifying-glass-chart text-orange-500"
+            }
+        ]
+    }
+]
