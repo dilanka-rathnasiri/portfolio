@@ -1,111 +1,42 @@
 [
     {
-        "category": "Languages & Frameworks",
-        "skills": [
-            {
-                "name": "Java",
-                "icon": "fa-brands fa-java text-red-500"
-            },
-            {
-                "name": "Python",
-                "icon": "fa-brands fa-python text-blue-500"
-            },
-            {
-                "name": "Go",
-                "icon": "fa-brands fa-golang text-cyan-500"
-            },
-            {
-                "name": "Spring Boot",
-                "icon": "fa-solid fa-leaf text-green-500"
-            },
-            {
-                "name": "FastAPI",
-                "icon": "fa-solid fa-bolt text-teal-500"
-            }
-        ]
+        "title": "Kubernetes ReplicaSet",
+        "description": "Understanding Kubernetes ReplicaSets and their role in container orchestration",
+        "link": "https://dev.to/dilanka-rathnasiri/kubernetes-replicaset-42ck"
     },
     {
-        "category": "Containers & Orchestration",
-        "skills": [
-            {
-                "name": "Kubernetes",
-                "icon": "fa-solid fa-dharmachakra text-blue-600"
-            },
-            {
-                "name": "Docker",
-                "icon": "fa-brands fa-docker text-blue-400"
-            },
-            {
-                "name": "Amazon EKS",
-                "icon": "fa-solid fa-cubes text-orange-400"
-            },
-            {
-                "name": "Amazon ECS",
-                "icon": "fa-solid fa-cube text-orange-400"
-            },
-            {
-                "name": "Knative",
-                "icon": "fa-solid fa-server text-blue-500"
-            }
-        ]
+        "title": "Kubernetes Pods",
+        "description": "An introduction to Kubernetes Pods and their importance in container orchestration",
+        "link": "https://dev.to/dilanka-rathnasiri/kubernetes-pods-4a5n"
     },
     {
-        "category": "Cloud & DevOps",
-        "skills": [
-            {
-                "name": "AWS",
-                "icon": "fa-brands fa-aws text-orange-500"
-            },
-            {
-                "name": "Terraform",
-                "icon": "fa-solid fa-cloud-arrow-up text-purple-500"
-            },
-            {
-                "name": "GitLab CI/CD",
-                "icon": "fa-brands fa-gitlab text-orange-600"
-            }
-        ]
+        "title": "Kubernetes Cluster Architecture",
+        "description": "Exploring the architecture of a Kubernetes cluster and its components",
+        "link": "https://dev.to/dilanka-rathnasiri/kubernetes-cluster-architecture-3f87"
     },
     {
-        "category": "APIs & Databases",
-        "skills": [
-            {
-                "name": "REST API",
-                "icon": "fa-solid fa-exchange-alt text-slate-500"
-            },
-            {
-                "name": "Envoy Gateway",
-                "icon": "fa-solid fa-hexagon text-fuchsia-500"
-            },
-            {
-                "name": "ApiDog",
-                "icon": "fa-solid fa-bone text-blue-500"
-            },
-            {
-                "name": "PostgreSQL",
-                "icon": "fa-solid fa-database text-blue-600"
-            },
-            {
-                "name": "Redis",
-                "icon": "fa-solid fa-layer-group text-red-600"
-            }
-        ]
+        "title": "Deploying Kubernetes dashboard on a Kubernetes cluster",
+        "description": "Step-by-step guide to deploying and accessing the Kubernetes dashboard on a Kubernetes cluster",
+        "link": "https://dev.to/dilanka-rathnasiri/deploying-kubernetes-dashboard-on-a-kubernetes-cluster-kmi"
     },
     {
-        "category": "Observability & Monitoring",
-        "skills": [
-            {
-                "name": "Datadog",
-                "icon": "fa-solid fa-paw text-purple-600"
-            },
-            {
-                "name": "Fluent Bit",
-                "icon": "fa-solid fa-dove text-cyan-500"
-            },
-            {
-                "name": "AWS CloudWatch",
-                "icon": "fa-solid fa-magnifying-glass-chart text-orange-500"
-            }
-        ]
+        "title": "Introduction to Authentication and Authorization",
+        "description": "Understanding the basics of authentication and authorization in Identity and Access Management",
+        "link": "https://dev.to/dilanka-rathnasiri/introduction-to-authentication-and-authorization-7mh"
+    },
+    {
+        "title": "Delivering images in AWS S3 bucket through AWS API gateway",
+        "description": "Step-by-step guide to deliver images in AWS S3 bucket through AWS API gateway",
+        "link": "https://dev.to/dilanka-rathnasiri/delivering-images-in-aws-s3-bucket-through-aws-api-gateway-49e"
+    },
+    {
+        "title": "Introduction to Java Servlets",
+        "description": "Getting started with Java Servlets for web development",
+        "link": "https://dev.to/dilanka-rathnasiri/introduction-to-java-servlets-32oc"
+    },
+    {
+        "title": "Java Method overriding",
+        "description": "Understanding method overriding in Java with examples",
+        "link": "https://dev.to/dilanka-rathnasiri/java-method-overriding-6e8"
     }
 ]
