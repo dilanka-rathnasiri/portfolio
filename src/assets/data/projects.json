@@ -15,6 +15,11 @@
         "link": "https://github.com/dilanka-rathnasiri/portfolio"
     },
     {
+        "title": "currency-converter",
+        "description": "A simple Go CLI application that converts currency values using real-time exchange rates",
+        "link": "https://github.com/dilanka-rathnasiri/currency-converter"
+    },
+    {
         "title": "simple-k8s",
         "description": "A minimal Kubernetes cluster setup to demonstrate essential tools for modern cloud native app development",
         "link": "https://github.com/dilanka-rathnasiri/simple-k8s"
